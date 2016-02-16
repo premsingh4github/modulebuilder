@@ -144,6 +144,9 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        // Additional Provider
+        Collective\Html\HtmlServiceProvider::class,
+        Pingpong\Generators\GeneratorsServiceProvider::class,
 
     ],
 
@@ -193,6 +196,11 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+
+        // Additional Aliases
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        'Module' => Pingpong\Modules\Facades\Module::class,
 
     ],
 

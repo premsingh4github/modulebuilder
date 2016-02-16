@@ -17,3 +17,6 @@ Route::get('/', function () {
 // Route::get('/test',function(){
 // 	return "test";
 // });
+
+Route::resource('tasks', 'TasksController');
+Route::resource('forms', 'FormsController');
