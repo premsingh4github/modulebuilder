@@ -14,9 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
-// Route::get('/test',function(){
-// 	return "test";
-// });
 
+Route::get('login','HomeController@index');
+Route::post('login','HomeController@login');
+Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
+	Route::resource('','Admin\AdminController');
+	Route::controller('jobs','Admin\JobController');
+});
 Route::resource('tasks', 'TasksController');
 Route::resource('forms', 'FormsController');

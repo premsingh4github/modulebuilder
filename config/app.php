@@ -147,6 +147,7 @@ return [
         // Additional Provider
         Collective\Html\HtmlServiceProvider::class,
         Pingpong\Generators\GeneratorsServiceProvider::class,
+        Webpatser\Countries\CountriesServiceProvider::class,
 
     ],
 
@@ -201,6 +202,7 @@ return [
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'Module' => Pingpong\Modules\Facades\Module::class,
+        'Countries' => Webpatser\Countries\CountriesFacade::class,
 
     ],
 

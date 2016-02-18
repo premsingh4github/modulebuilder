@@ -11,9 +11,8 @@
 	<table class="table table-stripped table-bordered">
 		<thead>
 			<th class="text-center">#</th>
-			<th>Name</th>
-			<th>Description</th>
-			<th>Fields</th>
+			<th>Title</th>
+			<!-- <th>Fields</th> -->
 
 			<th>Created At</th>
 			<th class="text-center">Action</th>
@@ -22,9 +21,8 @@
 			@foreach ($forms as $form)
 				<tr>
 					<td class="text-center">{!! $no !!}</td>
-					<td>{!! $form->name !!}</td>
-					<td>{!! $form->description !!}</td>
-					<td>{!! $form->fields !!}</td>
+					<td>{!! $form->title !!}</td>
+					<!-- <td>{!! $form->fields !!}</td> -->
 		
 					<td>{!! $form->created_at !!}</td>
 					<td class="text-center">
