@@ -148,6 +148,7 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         Pingpong\Generators\GeneratorsServiceProvider::class,
         Webpatser\Countries\CountriesServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
     ],
 

@@ -10,7 +10,9 @@
         "laravelcollective/html": "5.1.*",
         "pingpong/generators": "~2.1",
         "pingpong/modules": "~2.1",
-        "webpatser/laravel-countries": "dev-master"
+        "webpatser/laravel-countries": "dev-master",
+        "barryvdh/laravel-ide-helper": "^2.1",
+        "doctrine/dbal": "^2.5"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -41,6 +43,8 @@
             "php artisan clear-compiled"
         ],
         "post-update-cmd": [
+            "php artisan clear-compiled",
+            "php artisan ide-helper:generate",
             "php artisan optimize"
         ],
         "post-root-package-install": [

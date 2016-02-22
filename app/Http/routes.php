@@ -20,6 +20,15 @@ Route::post('login','HomeController@login');
 Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
 	Route::resource('','Admin\AdminController');
 	Route::controller('jobs','Admin\JobController');
+	Route::resource('educationalqualifications', 'Admin\EducationalqualificationsController');
+	Route::resource('joblevels', 'Admin\JoblevelsController');
+	Route::resource('industries', 'Admin\IndustriesController');
+	Route::resource('jobtypes', 'Admin\JobtypesController');
+	Route::resource('jobcategories', 'Admin\JobcategoriesController');
+	Route::resource('jobaddlayouts', 'Admin\JobaddlayoutsController');
+	Route::resource('questioncategories', 'Admin\QuestioncategoriesController');
+	Route::resource('questions', 'Admin\QuestionsController');
 });
 Route::resource('tasks', 'TasksController');
 Route::resource('forms', 'FormsController');
+
